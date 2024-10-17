@@ -1,0 +1,191 @@
+/* them font chu */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif ;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+
+
+}
+h2{
+    font-size: 46px;
+    line-height:64px ;
+    color: #222;
+}
+h4{
+    font-size: 30px;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 12px;
+    color:#465b52  ;
+
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor:pointer ;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+body{
+    width:100%;
+}
+/* header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:#F7E7C5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 30px; /* Tăng khoảng cách giữa các mục */
+    position: relative;
+}
+
+#header .logo {
+    width: 50px;
+    height: 50px;
+   
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px; /* Tăng kích thước chữ */
+    font-weight: 700; /* Thay đổi độ đậm của chữ */
+    color: #2c3e50; /* Thay đổi màu chữ */
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+    color: #16a085; /* Màu chữ khi hover */
+}
+
+#navbar li a:active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    background: #16a085; /* Màu đường dưới khi hover */
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero{
+    background-image: url(./img/microsoft-edge-5bM6nLQ9Qv0-unsplash\ \(1\).jpg);
+    height: 90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+@keyframes blink {
+    0%, 100% {
+        color: #66ccff; /* Màu xanh nhạt ban đầu */
+    }
+    50% {
+        color: #ffcc66; /* Màu vàng cam khi nhấp nháy */
+    }
+}
+
+#hero h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 60px; /* Kích thước chữ lớn hơn */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Bóng đậm để tăng độ nổi */
+    animation: blink 1s infinite; /* Hiệu ứng nhấp nháy */
+}
+
+#hero h2 {
+    color: #66ccff; /* Màu xanh nhạt */
+    font-family: 'Helvetica', sans-serif;
+    font-size: 48px; /* Kích thước chữ lớn */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Bóng đậm */
+    animation: blink 1s infinite; /* Hiệu ứng nhấp nháy */
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+    color: #66ccff; /* Màu xanh nhạt */
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px; /* Kích thước chữ vừa phải */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Bóng */
+    animation: blink 1s infinite; /* Hiệu ứng nhấp nháy */
+}
+
+#hero p {
+    color: #99cc99; /* Màu xanh lá nhạt */
+    font-family: 'Verdana', sans-serif;
+    font-size: 20px; /* Kích thước chữ vừa */
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Bóng */
+    animation: blink 1s infinite; /* Hiệu ứng nhấp nháy */
+}
+
+
+
+#hero button {
+    /* background-image: url(./img/microsoft-edge-5bM6nLQ9Qv0-unsplash\ \(1\).jpg); */
+    background-color: transparent; /* Nền trong suốt */
+    color: #7533cc; /* Màu chữ */
+    padding: 14px 80px 14px 65px; /* Căn chỉnh khoảng cách bên trong */
+    cursor: pointer; /* Con trỏ chuột chuyển thành hình bàn tay */
+    font-weight: 700; /* Độ đậm chữ */
+    font-size: 15px; /* Cỡ chữ */
+    border: 2px solid #7533cc; /* Viền với màu tương ứng */
+    border-radius: 30px; /* Bo góc mềm mại */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tạo đổ bóng nhẹ */
+    background-size: cover; /* Kích thước ảnh phủ toàn bộ nút */
+    background-position: center; /* Căn giữa hình nền */
+}
+
+/* Hiệu ứng khi hover vào button */
+#hero button:hover {
+    background-color: #7533cc; /* Đổi màu nền khi hover */
+    color: white; /* Chữ chuyển thành màu trắng */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Tăng đổ bóng khi hover */
+    transform: translateY(-3px); /* Nút nhấc lên nhẹ khi hover */
+}
+
+
